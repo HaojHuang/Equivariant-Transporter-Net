@@ -18,24 +18,22 @@ It inherits the Gym-like API from Ravens, each with (i) a scripted oracle that p
 
 **Abstract.** [Transporter Net](https://arxiv.org/pdf/2010.14406.pdf) is a recently proposed framework for pick and place that is able to learn good manipulation policies from a very few expert demonstrations. A key reason why Transporter Net is so sample efficient is that the model incorporates rotational equivariance into the pick module, i.e. the model immediately generalizes learned pick knowledge to objects presented in different orientations. This paper proposes a novel version of Transporter Net that is equivariant to both pick and place orientation. As a result, our model immediately generalizes place knowledge to different place orientations in addition to generalizing pick knowledge as before. Ultimately, our new model is more sample efficient and achieves better pick and place success rates than the baseline Transporter Net model.
 
-##Highlight
+## Highlight
+
 It is worth noting that our proposed method, Equivariant Transporter Network can achieve more sample efficiency and faster converge speed. Takes the block-insertion task for example, it can hit ~100% success rate when trained with 1 expert demonstration for 200 SGD steps (less than 2 minutes). More results could be found in our paper.
 
 ## Installation
 
 **Step 1.** Recommended: install [Miniconda](https://docs.conda.io/en/latest/miniconda.html) with Python 3.7.
 
-**Step 2.** Install the required packages
+**Step 2.** Install Pytorch (Test on Pytorch 1.8.1 and Cuda 10.2)
+```commandline
+conda install pytorch==1.8.1 torchvision==0.9.1 torchaudio==0.8.1 cudatoolkit=10.2 -c pytorch
+```
+**Step 3.** Install the required packages
 
 ```shell
-./oss_scipts/install_cuda.sh  #  For Ubuntu 16.04 and 18.04.
-sudo apt install gcc libgl1-mesa-dev python3.8-venv
-python3.8 -m venv ./venv
-source ./venv/bin/activate
-pip install -U pip
-pip install scikit-build
 pip install -r ./requirements.txt
-export PYTHONPATH=${PWD}
 ```
 
 ## Getting Started
@@ -69,6 +67,9 @@ Equivariant Transporter Network with a Tail Network performs well with a slightl
 
 **Observations:** RGB-D images (4X320X160)
 
-**Actions:** (u,v,theta)
+**Actions:** Picking: (u,v,theta); Placing: (u,v,theta)
 
+## Future Updates
+
+Equivairant Transporter Network without Picking angle inference.
 
