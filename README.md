@@ -41,21 +41,21 @@ pip install -r ./requirements.txt
 **Step 1.** Generate training and testing data.
 
 ```shell
-python gripper_get_demo.py  --mode train --task block-insertion --n=10  --disp=True
-python gripper_get_demo.py  --mode test  --task block-insertion --n=100 --disp=True
+python gripper_get_demo.py  --mode train --task block-insertion --n 10  --disp=True
+python gripper_get_demo.py  --mode test  --task block-insertion --n 100 --disp=True
 ```
 
 
 **Step 2.** Train a model e.g., Equivariant Transporter. Parameters are saved to the `checkpoints_{model}` directory. 
 
 ```shell
-python train.py --equ --lite --angle_lite --task=block-insertion --n_demos=1 --interval 200 --n_step 1000 --init
+python train.py --equ --lite --angle_lite --task=block-insertion --n_demos 1 --interval 200 --n_step 1000 --init
 ```
 
 **Step 3.** Evaluate the model trained for 200 iterations with 1 demos. Results are saved to the `test_{model}` directory.
 
 ```shell
-python gripper_test.py --equ --lite --angle_lite --task=block-insertion --n_demos=1 --n_steps=200 --disp=True
+python gripper_test.py --equ --lite --angle_lite --task=block-insertion --n_demos 1 --n_steps 200 --disp=True
 ```
 
 [//]: # (**Step 4.** Plot and print results.)
