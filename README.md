@@ -7,7 +7,7 @@
 
 ## Panda-gripper Simulation Environment for Pick and Place
 
-The experiment part of our paper is based on [Ravens](https://github.com/google-research/ravens), a simulation environment in PyBullet for 2D robotic manipulation with emphasis on pick and place. Since Ravens uses suction gripper that doesn't require pick angle inference, we select five tasks described below and provide a Panda-Gripper version simulated Environment. 
+The experiment part of our paper is based on [Ravens](https://github.com/google-research/ravens), a simulation environment in PyBullet for 2D robotic manipulation with emphasis on pick and place. Since Ravens uses suction gripper that doesn't require pick angle inference, we select five tasks described below and provide a **Panda-Gripper version simulated Environment**. 
 It inherits the Gym-like API from Ravens, each with (i) a scripted oracle that provides expert demonstrations and (ii) reward functions that provide partial credit.
 
 <img src="image/gripper.png"><br>
