@@ -1,5 +1,5 @@
 # Equivariant-Transporter-Net
-[Project Website](https://haojhuang.github.io/etp_page/)&nbsp;&nbsp;•&nbsp;&nbsp;[PDF](https://arxiv.org/abs/2202.09400)&nbsp;&nbsp;•&nbsp;&nbsp;
+[Project Website](https://haojhuang.github.io/etp_page/)&nbsp;&nbsp;•&nbsp;&nbsp;[PDF](https://arxiv.org/abs/2202.09400)&nbsp;&nbsp;•&nbsp;&nbsp; **RSS 2022**
 
 *Haojie Huang, Dian Wang, Robin Walters, Robert Platt*
 
