@@ -19,7 +19,7 @@ It inherits the Gym-like API from Ravens, each with (i) a scripted oracle that p
 (e) **palletizing-boxes**: pick up homogeneous fixed-sized boxes and stack them in transposed layers on the pallet.<br>
 
 
-## Highlight
+#
 
 It is worth noting that our proposed method, Equivariant Transporter Network can achieve more sample efficiency and faster converge speed. Taking the block-insertion task for example, it can hit ~100% success rate when trained with 1 expert demonstration for 200 SGD steps (less than 2 minutes). More results could be found in our paper.
 
