@@ -36,6 +36,7 @@ conda install pytorch==1.8.1 torchvision==0.9.1 torchaudio==0.8.1 cudatoolkit=10
 ```shell
 pip install -r ./requirements.txt
 ```
+(It's a little awkward to install tensorflow that is not used for training. A tensorflow without cuda is ok since the model is trained with pytorch. Latter update will remove tensorflow and provied a pure-pytorch version that also enable batch training.)
 
 ## Getting Started
 
