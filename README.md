@@ -43,8 +43,8 @@ pip install -r ./requirements.txt
 **Step 1.** Generate training and testing data.
 
 ```shell
-python gripper_get_demo.py  --mode train --task block-insertion --n 10  --disp=True
-python gripper_get_demo.py  --mode test  --task block-insertion --n 100 --disp=True
+python gripper_get_demo.py  --mode train --task block-insertion --n 10  --disp
+python gripper_get_demo.py  --mode test  --task block-insertion --n 100 --disp
 ```
 
 
