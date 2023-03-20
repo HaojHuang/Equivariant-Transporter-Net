@@ -76,4 +76,5 @@ Equivariant Transporter Network with a Tail Network performs well with a slightl
 - Equivairant Transporter Network without Picking angle inference.
 - Pure Pytorch implementation
 - Batch training
+- Goal-conditioned tasks and models.
 
