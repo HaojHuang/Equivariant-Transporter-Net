@@ -57,7 +57,7 @@ python train.py --equ --lite --angle_lite --task=block-insertion --n_demos 1 --i
 **Step 3.** Evaluate the model trained for 200 iterations with 1 demos. Results are saved to the `test_{model}` directory.
 
 ```shell
-python gripper_test.py --equ --lite --angle_lite --task=block-insertion --n_demos 1 --n_steps 200 --disp=True
+python gripper_test.py --equ --lite --angle_lite --task=block-insertion --n_demos 1 --n_steps 200 --disp
 ```
 
 [//]: # (**Step 4.** Plot and print results.)
