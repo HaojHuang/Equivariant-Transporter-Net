@@ -60,7 +60,11 @@ python train.py --equ --lite --angle_lite --task=block-insertion --n_demos 1 --i
 python gripper_test.py --equ --lite --angle_lite --task=block-insertion --n_demos 1 --n_steps 200 --disp
 ```
 
-[//]: # (**Step 4.** Plot and print results.)
+**Step 4.** Plot and print test results.
+
+```shell
+python plot.py --task block-insertion --n_demos 1
+```
 
 ## More description
 
